@@ -1,10 +1,11 @@
 <script>
 //Import Bar and mixins class from the vue-chartjs wrapper
-import { Bar, mixins } from 'vue-chartjs'
+import { Bubble, mixins } from 'vue-chartjs'
 
 //Getting the reactiveProp mixin from the mixins module.
 const { reactiveProp } = mixins
-export default Bar.extend({
+export default {
+    extends: Bubble,
     mixins: [reactiveProp],
     data() {
         return {
@@ -37,5 +38,5 @@ export default Bar.extend({
         //this.chartData is created in the mixin and contains all the data needed to build chart.
         this.renderChart(this.chartData, this.options)
     }
-})
+}
 </script>
