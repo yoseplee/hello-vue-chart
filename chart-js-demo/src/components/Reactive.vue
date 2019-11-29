@@ -13,14 +13,25 @@ export default {
             options: {
                 scales: {
                     yAxes: [{
+                        display: true,
                         ticks: {
-                            beginAtZero: true
+                            beginAtZero: true,
+                            steps: 10,
+                            stepValue: 10,
+                            max: 100
                         },
                         gridLines: {
                             display: true
                         }
                     }],
                     xAxes: [{
+                        display: true,
+                        ticks: {
+                            beginAtZero: true,
+                            steps: 10,
+                            stepValue: 10,
+                            max: 100
+                        },
                         gridLines: {
                             display: true
                         }
