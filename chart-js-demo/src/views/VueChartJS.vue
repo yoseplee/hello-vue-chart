@@ -8,13 +8,12 @@
             </div>
             <div class="column">
                 <h3>Bar Chart</h3>
-                <!-- Bar chart example -->
             </div>
         </div>
         <div class="columns">
             <div class="column">
                 <h3>Bubble Chart</h3>   
-                <!-- Bubble Chart example -->
+                <Bubble-chart></Bubble-chart>
             </div>
             <div class="column">
                 <h3>Reactivity - Live update upon change in datasets</h3>
@@ -25,10 +24,11 @@
 
 <script>
 import LineChart from '@/components/LineChart'
+import BubbleChart from '@/components/BubbleChart'
 export default {
     name: 'VueChartJS',
     components: {
-        LineChart
+        LineChart, BubbleChart
     }
 }
 </script>
