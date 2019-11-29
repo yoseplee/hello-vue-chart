@@ -55,34 +55,33 @@ export default {
                         //Data to be represented on y-axis
                         data: [
                             {
-                                x: 50,
-                                y: 50,
-                                r: 10
-                            },
-                            {
-                                x: 60,
-                                y: 30,
-                                r: 20
-                            },
-                            {
-                                x: 40,
-                                y: 60,
-                                r: 25
-                            },
-                            {
-                                x: 80,
-                                y: 80,
-                                r: 50
-                            },
-                            {
-                                x: 20,
-                                y: 30,
-                                r: 25
-                            },
-                            {
-                                x: 0,
+                                x: this.getRandomInt(),
                                 y: this.getRandomInt(),
-                                r: 5
+                                r: this.getRandomRadius()
+                            },
+                            {
+                                x: this.getRandomInt(),
+                                y: this.getRandomInt(),
+                                r: this.getRandomRadius()
+                            },
+                            {
+                                x: this.getRandomInt(),
+                                y: this.getRandomInt(),
+                                r: this.getRandomRadius()
+                            },
+                            {
+                                x: this.getRandomInt(),
+                                y: this.getRandomInt(),
+                                r: this.getRandomRadius()                            },
+                            {
+                                x: this.getRandomInt(),
+                                y: this.getRandomInt(),
+                                r: 25
+                            },
+                            {
+                                x: this.getRandomInt(),
+                                y: this.getRandomInt(),
+                                r: this.getRandomRadius()
                             },
                         ]
                     }
@@ -90,6 +89,9 @@ export default {
             }
         },
         getRandomInt() {
+            return Math.floor(Math.random() * (100 - 5 + 1)) + 5
+        },
+        getRandomRadius() {
             return Math.floor(Math.random() * (50 - 5 + 1)) + 5
         }
     }
