@@ -2,7 +2,9 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/chartsjs">vue-chartjs</router-link> |
+      <router-link to="/charts">vue-charts</router-link> |
+      <router-link to="/chartkick">vue-chartkick</router-link>
     </div>
     <router-view/>
   </div>
