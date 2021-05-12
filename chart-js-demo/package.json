@@ -8,7 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "chart.js": "^2.9.3",
+    "chart.js": "^2.9.4",
     "chartkick": "^3.2.0",
     "core-js": "^3.4.3",
     "hchs-vue-charts": "^1.2.8",
